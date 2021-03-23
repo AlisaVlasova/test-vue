@@ -1,18 +1,28 @@
 <template>
-  <div>
+  <div class="main">
     <sidebar></sidebar>
-    <patients-list @swipe="swipe"></patients-list>
-    <drugs-list @drugActive="handleDrug"></drugs-list>
+    <div class="main__content">
+      <patients-list
+        @handleDrug="handleDrug"
+        :direction="direction"
+      ></patients-list>
+      <drugs-list @drugActive="handleDrug"></drugs-list>
+    </div>
   </div>
 </template>
 
 <script>
-import PatientsList from "@/components/PatientsList";
+import PatientsList from "@/components/PatientsList.vue";
 import Sidebar from "@/components/Sidebar";
 import DrugsList from "../components/DrugsList.vue";
 
 export default {
   name: "Main",
+  data() {
+    return {
+      direction: null,
+    };
+  },
   components: {
     PatientsList,
     Sidebar,
@@ -36,20 +46,22 @@ export default {
 
       if (this.currentPatient + 1 < this.patients.length) {
         this.$store.dispatch("setCurrentPatient", this.currentPatient + 1);
+        this.swipe(id);
       } else {
         this.$router.push({ name: "Final" });
       }
     },
-    swipe(direction) {
-      switch (direction) {
-        case "left":
-          this.handleDrug(1);
+    swipe(id) {
+      switch (id) {
+        case 1:
+          this.direction = "left";
+          console.log(this.direction);
           break;
-        case "right":
-          this.handleDrug(3);
+        case 2:
+          this.direction = "up";
           break;
-        case "up":
-          this.handleDrug(2);
+        case 3:
+          this.direction = "right";
           break;
       }
     },
@@ -57,4 +69,11 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.main {
+  display: grid;
+  grid-template-columns: 470px 1fr;
+
+  height: 100vh;
+}
+</style>

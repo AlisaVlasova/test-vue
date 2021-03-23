@@ -21,7 +21,7 @@ export default {
   methods: {
     restart() {
       this.$store.dispatch("restart");
-      this.$router.push({ name: "Cover" });
+      this.$router.push({ name: "Main" });
     },
   },
 };

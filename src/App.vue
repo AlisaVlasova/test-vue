@@ -12,7 +12,7 @@ cd
 
 body {
   margin: 0;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 html {
@@ -23,6 +23,7 @@ html {
   color: #414141;
 
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 p,
