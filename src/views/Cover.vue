@@ -14,14 +14,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Cover",
+};
 </script>
 
-<style scoped lang="scss">
-.cover {
-  background-image: url(../assets/image/bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-</style>
+<style scoped lang="scss"></style>

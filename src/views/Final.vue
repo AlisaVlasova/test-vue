@@ -12,6 +12,7 @@
 
 <script>
 export default {
+  name: "Final",
   computed: {
     drugs() {
       return this.$store.getters.getDrugs;
