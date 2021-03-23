@@ -16,6 +16,12 @@ body {
 }
 
 html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #414141;
+
   scroll-behavior: smooth;
 }
 
@@ -24,13 +30,15 @@ h1,
 h2,
 h3,
 ul,
-li {
+li,
+a {
   margin: 0;
   padding: 0;
+  color: inherit;
   font-weight: inherit;
   font-size: inherit;
   list-style: none;
-  color: inherit;
+  text-decoration: none;
 }
 
 button {
