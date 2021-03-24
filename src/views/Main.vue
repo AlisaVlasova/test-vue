@@ -55,7 +55,6 @@ export default {
       switch (id) {
         case 1:
           this.direction = "left";
-          console.log(this.direction);
           break;
         case 2:
           this.direction = "up";

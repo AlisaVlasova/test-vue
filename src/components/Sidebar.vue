@@ -66,6 +66,9 @@ export default {
 <style lang="scss" scoped>
 .sidebar {
   position: relative;
+  z-index: 2;
+
+  background-color: #fff;
 
   display: flex;
   flex-direction: column;
@@ -76,7 +79,6 @@ export default {
     display: block;
 
     position: absolute;
-    z-index: -1;
     left: 0;
     right: 0;
     top: 0;
@@ -87,6 +89,8 @@ export default {
   }
 
   &__header {
+    position: relative;
+
     display: flex;
 
     padding: 70px 50px;
@@ -150,6 +154,7 @@ export default {
 }
 
 .params {
+  position: relative;
   padding: 0 50px;
 
   &__list {
