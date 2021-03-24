@@ -71,8 +71,15 @@ export default {
 <style scoped lang="scss">
 .main {
   display: grid;
-  grid-template-columns: 470px 1fr;
+  grid-template-columns: 1fr 2fr;
 
   height: 100vh;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 </style>

@@ -102,9 +102,6 @@ export default {
   position: relative;
 
   min-width: 100%;
-  min-height: 850px;
-
-  padding: 130px 0 180px;
 
   &__item {
     position: absolute;
@@ -112,7 +109,7 @@ export default {
 
     max-width: 540px;
 
-    margin-right: 50px;
+    margin: 10% auto;
 
     box-shadow: 0px 0px 40px rgba(127, 127, 127, 0.4);
     border-radius: 40px;
@@ -135,15 +132,15 @@ export default {
     margin-bottom: 15px;
 
     font-weight: bold;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 2rem;
+    line-height: 2rem;
 
     color: #8e9ad5;
   }
 
   &__text {
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -154,8 +151,8 @@ export default {
 
   padding: 30px;
 
-  font-size: 52px;
-  line-height: 51px;
+  font-size: 3.2rem;
+  line-height: 2.5rem;
 
   border: 8px solid;
 

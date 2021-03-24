@@ -33,18 +33,31 @@ export default {
   justify-content: space-between;
   align-items: center;
 
-  padding: 0 30px;
+  width: 100%;
+
+  padding: 0 5% 5%;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
   &__button {
-    padding: 30px 50px;
+    padding: 23px 40px;
+    margin-bottom: 30px;
 
     font-weight: bold;
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
 
     color: #ffffff;
 
     border-radius: 100px;
+    border: 2px solid transparent;
+
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
   }
 }
 </style>

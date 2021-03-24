@@ -93,7 +93,7 @@ export default {
 
     display: flex;
 
-    padding: 70px 50px;
+    padding: 10%;
   }
 
   &__button {
@@ -116,8 +116,8 @@ export default {
   }
 
   &__title {
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
 
     color: #ffffff;
   }
@@ -125,10 +125,10 @@ export default {
   &__footer {
     position: relative;
 
-    padding: 20px 50px;
+    padding: 5% 10%;
 
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
     text-align: center;
     letter-spacing: 0.02em;
 
@@ -148,14 +148,14 @@ export default {
   }
 
   &__count {
-    font-size: 46px;
-    line-height: 80px;
+    font-size: 2.8rem;
+    line-height: 4rem;
   }
 }
 
 .params {
   position: relative;
-  padding: 0 50px;
+  padding: 0 10%;
 
   &__list {
     display: flex;
@@ -173,9 +173,9 @@ export default {
     padding: 10px 20px 10px 10px;
     margin: 0 20px 40px 0;
 
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bold;
-    line-height: 59px;
+    line-height: 3rem;
 
     background: #ffffff;
     box-shadow: 0px 0px 50px rgba(131, 42, 64, 0.4);
