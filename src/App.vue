@@ -6,6 +6,13 @@ cd
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: "AvenirNextCyr";
+  src: url("./assets/fonts/AvenirNextCyr-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -16,7 +23,7 @@ body {
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "AvenirNextCyr", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 20px;
 
